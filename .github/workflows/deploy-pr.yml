@@ -10,6 +10,7 @@ name: deploy-pr
 
 on:
   pull_request:
+  push:
 
 env:
   REGISTRY: ghcr.io
