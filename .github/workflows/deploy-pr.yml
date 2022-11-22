@@ -69,7 +69,7 @@ jobs:
       - name: Create PR
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # レクチャー内では、Personal Access Tokenを発行して fastapi-sampleレポから kubernetes-basicsレポコードをプッシュできる権限を与えました。
+          token: ${{ secrets.K8S_TUTORIAL }} # レクチャー内では、Personal Access Tokenを発行して fastapi-sampleレポから kubernetes-basicsレポコードをプッシュできる権限を与えました。
           title: "Update fastapi-sample"
           base: v2.0-rc
           draft: true
